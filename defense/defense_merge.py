@@ -1,20 +1,4 @@
-# -*- coding: utf-8 -*-
-# ****************************************************************************
-#
-#  PROPRIETARY AND CONFIDENTIAL - VADIS SA/NV
-#  ------------------------------------------
-#
-#  Copyright (c) 2015 - 2017 VADIS SA/NV
-#  All Rights Reserved
-#
-#  NOTICE: All information, intellectual concepts and technical concepts
-#  contained herein is and remains the property of Vadis SA/NV. Copying and
-#  sharing this information and concepts via any medium is strictly forbidden
-#  unless prior written permission is obtained from Vadis SA/NV. Reproduction
-#  of this file/project/material is strictly prohibited unless prior written
-#  permission is obtained from Vadis SA/NV.
-#
-# ***************************************************************************
+
 
 import argparse
 import pandas as pd
