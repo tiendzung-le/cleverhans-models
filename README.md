@@ -8,15 +8,17 @@ My code of 3 submissions for 3 sub competitions
 - Defense Against Adversarial Attack https://www.kaggle.com/c/nips-2017-defense-against-adversarial-attack
 
 ## The approach
-### Defense Against Adversarial Attack: Team cosmos
+I did not focus on image processing but tried to apply Game Theory in these 3 competitions. And the results showed that this approach worked pretty well.
+
+### Defense Against Adversarial Attack: Team cosmos - rank 6
 - It is basically an ensemble of 7 models. 
 - The inception_v3 model's prediction is not included in the ensemble but used as a special adversarial image detector. Let's name the output of the ensemble is main_label and the output of the inception_v3 model is fool_label. Note that the inception_v3 model is strongly attacked so most of the time the fool_lable is wrong. The final outcome is the main_label if it is different from fool_lable or more than half of the ensemble classifiers votes for the main_label. Otherwise the final outcome is the second best of the ensemble.
 - In order to avoid the OOM issue, each model is run seperately and the prediction is redirected into a temporary file. The ensemble script reads all 8 predictions and produces the final result.
 
-### Non-targeted Adversarial Attack: Team cosmos
+### Non-targeted Adversarial Attack: Team cosmos - rank 16
 - It is an iterative FGSM with 5 models
 
-### Targeted Adversarial Attack: Team Arrival
+### Targeted Adversarial Attack: Team Arrival - rank 7
 - It is an iterative attack with 2 models
 
 ## Models
